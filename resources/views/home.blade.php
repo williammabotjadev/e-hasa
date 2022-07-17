@@ -14,33 +14,33 @@
                         </div>
                     @endif
 
-                    <div class="row" style="display: flex; flex-direction: row; padding: 20px; width: 100%">
-                            <a href="/">
+                    <div class="row" style="display: flex; flex-direction: row; justify-content: center; padding: 40px; width: 100%">
+                            <a href="#">
                             <div class="row is-large row-block">
                                 Classrooms
                             </div>
                             </a>
-                            <a href="/">
+                            <a href="#">
                             <div class="row is-large row-block">
                                 Students
                             </div>
                             </a>    
-                            <a href="/">
+                            <a href="#">
                             <div class="row is-large row-block">
                                 Curriculums
                             </div>
                             </a>
-                            <a href="/">
+                            <a href="#">
                             <div class="row is-large row-block">
                                 Resources
                             </div>
                             </a>
-                            <a href="/">
+                            <a href="#">
                             <div class="row is-large row-block">
                                 Messages
                             </div>
                             </a>
-                            <a href="/">
+                            <a href="#">
                             <div class="row is-large row-block">
                                 Settings
                             </div>
@@ -49,6 +49,8 @@
 
                 </div>
             </div>
+            <br />
+            <h1 style="margin-top: 80px; text-align: center"><em>"Nothing can defeat the Human Will..."</em> <strong>- Benjamin Disraeli</strong></h1>
         </div>
     </div>
 </div>
