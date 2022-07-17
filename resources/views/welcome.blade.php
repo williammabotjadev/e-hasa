@@ -24,7 +24,7 @@
         </style>
     </head>
     <body class="antialiased">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav class="navbar" role="navigation" aria-label="main navigation" class="is-responsive">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
       <img src="{{ asset('/images/logo.png') }}">
@@ -94,8 +94,19 @@
     </div>
   </div>
 </nav>
-            <div class="d-flex flex-row container-fluid is-mobile px-5 py-5 align-items-end" style="padding: 20px 0px 0px 20px">
-                    <img id="slider"  width="778" height="512">
+            <div class="container-fluid is-responsive is-large is-mobile px-5 py-5 align-items-end" style="display: flex; flex-direction: row">
+                    <div>
+                        <img id="slider" class="content is-responsive is-image is-large" style="width: 64%">
+                    </div>
+                    <div class="is-responsive is-mobile" style="display: flex; flex-direction: column; width: 20%; margin-top: 240px; margin-left: -320px; margin-right: 80px; padding: 10px; text-align: center; justify-content: flex-start">
+                        <button class="button is-primary is-responsive">
+                            Get Started
+                        </button>
+                        <span>Already Registered?</span>
+                        <button class="button is-responsive">
+                            Login
+                        </button>
+                    </div>
             </div>      
                
             
