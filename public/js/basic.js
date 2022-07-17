@@ -1,14 +1,14 @@
-import './bootstrap';
+import 'bootstrap';
 
 // *** JS Typewriter Effect ***
 
 let i = 0;
-let target = document.getElementById("target");
+let target = document.getElementById("typewriter");
 let text = target.innerHTML;
-target.innerHTML = ' ';
-let speed = 75; //speed duration of effect in millisec
+target.innerHTML = 'Welcome to e-Hasa';
+let speed = 75; 
 
-typeWriter(); //to call function
+typeWriter();
 function typeWriter() {
     if (i < text.length) {
         target.innerHTML += text.charAt(i);
@@ -16,3 +16,4 @@ function typeWriter() {
         setTimeout(typeWriter, speed);
     }
 }
+
