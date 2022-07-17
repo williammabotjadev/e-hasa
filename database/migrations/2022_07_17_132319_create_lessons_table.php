@@ -15,6 +15,14 @@ return new class extends Migration
     {
         Schema::create('lessons', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedBigInteger('curriculum_id')->index(); 
+            $table->foreign('curriculum_id')->references('id')->on('curriculums')->onDelete('cascade'); 
+            $table->string('name');
+            $table->string('description');
+            $table->string('author');
+            $table->string('created_at');
+            $table->string('duration');
+            $table->string('tags');
             $table->timestamps();
         });
     }
