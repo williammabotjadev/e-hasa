@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Repositories\UserRepository;
 
 class InstructorsController extends Controller
 {
@@ -37,17 +36,17 @@ class InstructorsController extends Controller
 
     }
 
-    public function __construct(UserRepository $users)
+    public function __construct()
     {
-        foreach($users as $user) 
-        {
-            $instructor_users = [];
+        // foreach($users as $user) 
+        // {
+        //     $instructor_users = [];
 
-            if($user->user_role == "Instructor") {
-                array_push($instructor_users, $user);    
-            } 
+        //     if($user->user_role == "Instructor") {
+        //         array_push($instructor_users, $user);    
+        //     } 
 
-            $this->instructors = $instructor_users;
-        }
+        //     $this->instructors = $instructor_users;
+        // }
     }
 }
