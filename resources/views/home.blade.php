@@ -15,7 +15,7 @@
                     @endif
 
                     <div class="row" style="display: flex; flex-direction: row; justify-content: center; padding: 40px; width: 100%">
-                            <a href="#">
+                            <a href="{{ route('classrooms') }}">
                             <div class="row is-large row-block py-5" style="display: flex; flex-direction: column; text-align: center">
                                 
                                 <i class="fa fa-laptop fa-lg" style="font-size: 96px; text-align: center"></i>
