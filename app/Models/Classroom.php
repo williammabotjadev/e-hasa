@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\Curriculum;
 use App\Models\Students;
 use App\Models\Instructor;
+use App\Models\Resource;
 
 class Classroom extends Model
 {
@@ -25,6 +26,11 @@ class Classroom extends Model
     public function instructors() 
     {
         return $this->hasMany(Instructor::class);
+    }
+
+    public function resources() 
+    {
+        return $this->hasMany(Resource::class);
     }
 
     protected $fillable = [
