@@ -19,42 +19,45 @@
                             <div class="row is-large row-block py-5" style="display: flex; flex-direction: column; text-align: center">
                                 
                                 <i class="fa fa-laptop fa-lg" style="font-size: 96px; text-align: center"></i>
+                                <br>
                                 <strong>Classrooms</strong>
                             </div>
                             </a>
                             <a href="#">
                             <div class="row is-large row-block py-5" style="display: flex; flex-direction: column; text-align: center">
-                                <i class="fa fa-laptop fa-lg" style="font-size: 96px"></i>
-                                <strong>Students</strong>
+                                <i class="fa fa-users fa-lg" style="font-size: 80px"></i>
+                                <br>
+                                <br>
+                                <span><strong>Students</strong></span>
                             </div>
                             </a>    
                             <a href="#">
                             <div class="row is-large row-block py-5" style="display: flex; flex-direction: column; text-align: center">
-                                <i class="fa fa-laptop fa-lg" style="font-size: 96px; text-align: center"></i>
+                                <i class="fa fa-book fa-lg" style="font-size: 96px; text-align: center"></i>
                                 <strong>Curriculums</strong>
                             </div>
                             </a>
                             <a href="#">
                             <div class="row is-large row-block py-5" style="display: flex; flex-direction: column; text-align: center">
-                                <i class="fa fa-laptop fa-lg" style="font-size: 96px; text-align: center"></i>
+                                <i class="fa fa-calendar fa-lg" style="font-size: 96px; text-align: center"></i>
                                 <strong>Schedule</strong>
                             </div>
                             </a>
                             <a href="#">
                             <div class="row is-large row-block py-5" style="display: flex; flex-direction: column; text-align: center">
-                                <i class="fa fa-laptop fa-lg" style="font-size: 96px; text-align: center"></i>
+                                <i class="fa fa-info-circle fa-lg" style="font-size: 96px; text-align: center"></i>
                                 <strong>Resources</strong>
                             </div>
                             </a>
                             <a href="#">
                             <div class="row is-large row-block py-5" style="display: flex; flex-direction: column; text-align: center">
-                                <i class="fa fa-laptop fa-lg" style="font-size: 96px; text-align: center"></i>
+                                <i class="fa fa-envelope fa-lg" style="font-size: 96px; text-align: center"></i>
                                 <strong>Messages</strong>
                             </div>
                             </a>
                             <a href="#">
                             <div class="row is-large row-block py-5" style="display: flex; flex-direction: column; text-align: center">
-                                <i class="fa fa-laptop fa-lg" style="font-size: 96px; text-align: center"></i>
+                                <i class="fa fa-cogs fa-lg" style="font-size: 96px; text-align: center"></i>
                                 <strong>Settings</strong>
                             </div>
                             </a>
