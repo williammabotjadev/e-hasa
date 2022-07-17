@@ -75,7 +75,7 @@
       <div class="navbar-item">
         <div class="buttons">
         @auth
-        <a href="{{ url('/home') }}" class="button is-primary">
+        <a href="{{ url('/home') }}" class="button" style="background: #808000; color: white">
             <strong>Home</strong>
         </a>
         @else
@@ -83,7 +83,7 @@
             Log in
           </a>
           @if (Route::has('register'))
-          <a href="{{ route('register') }}" class="button is-primary">
+          <a href="{{ route('register') }}" class="button" style="background: #808000; color: white">
             <strong>Sign up</strong>
           </a>
           @endif
@@ -99,19 +99,23 @@
                         <img id="slider" class="content is-responsive is-image is-large" style="width: 64%">
                     </div>
                     <div class="is-responsive is-mobile" style="display: flex; flex-direction: column; width: 20%; margin-top: 240px; margin-left: -320px; margin-right: 80px; padding: 10px; text-align: center; justify-content: flex-start">
-                        <button class="button is-primary is-responsive mb-5">
+                        <a href="{{ route('register') }}" class="button is-responsive mb-5" style="background: #808000; color: white">
                             Get Started
-                        </button>
+                        </a>
                         <span class="mb-5">Already Registered?</span>
-                        <button class="button is-responsive mb-5">
+                        <a href="{{ route('login') }}" class="button is-responsive mb-5">
                             Login
-                        </button>
+                        </a>
                     </div>
             </div>      
                
             
             </div>
         </div>
+
+        <footer class="is-footer" style="display: flex: justify-content: center; text-align: center; background: #808000; color: white; height: 240px; padding: 20px">
+            Copyright &copy; 2022
+        </footer>
 
         <script>
             // *** JS Typewriter Effect ***
