@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>e-Hasa | Your Gateway to Communication</title>
         <link rel="shortcut icon" href="{{ asset('/images/icon.png') }}" type="image/png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <!-- Fonts -->

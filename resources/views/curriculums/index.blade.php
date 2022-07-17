@@ -13,7 +13,11 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    {{ echo curriculums }}
+                    @if (count($curriculums) > 0) 
+                        <h1>Your Curricula</h1>
+                    @else
+                        <h1>No Curricula</h1>
+                    @endif
                 </div>
 
 @endsection
