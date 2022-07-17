@@ -113,7 +113,7 @@
             </div>
         </div>
 
-        <footer class="is-footer" style="display: flex: justify-content: center; text-align: center; background: #808000; color: white; height: 240px; padding: 20px">
+        <footer class="is-footer" style="display: flex: justify-content: center; text-align: center; background: #808000; color: white; height: 10%; width: 100%; padding: 20px; bottom: 0px; position: fixed;">
             Copyright &copy; 2022
         </footer>
 
