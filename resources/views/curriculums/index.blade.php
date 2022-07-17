@@ -13,5 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                    {{ echo curriculums }}
+                </div>
 
 @endsection

@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Curriculum;
 
 class CurriculumsController extends Controller
 {
     public function index()
     {
-        return view('curriculums.index');
+        $curricumlums = Curriculum::all();
+        return view('curriculums.index', ['curriculums' => $curricumlums]);
     }
 
     public function edit()
