@@ -44,7 +44,7 @@
       </a>
 
       <a class="navbar-item">
-        Documentation
+        How it works?
       </a>
 
       <div class="navbar-item has-dropdown is-hoverable">
@@ -57,7 +57,7 @@
             About
           </a>
           <a class="navbar-item">
-            Jobs
+            For Instructors
           </a>
           <a class="navbar-item">
             Contact
