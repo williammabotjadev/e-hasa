@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('quizzes', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('curriculum_id')->index(); 
-            $table->foreign('curriculum_id')->references('id')->on('curriculums')->onDelete('cascade'); 
+            $table->foreign('curriculum_id')->references('id')->on('curricula')->onDelete('cascade'); 
             $table->string('name');
             $table->string('description');
             $table->string('created_date');
