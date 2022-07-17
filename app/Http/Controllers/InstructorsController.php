@@ -35,4 +35,18 @@ class InstructorsController extends Controller
     {
 
     }
+
+    public function __construct(UserRepository $users)
+    {
+        foreach($users as $user) 
+        {
+            $instructor_users = [];
+
+            if($user->user_role == "Instructor") {
+                array_push($instructor_users, $user);    
+            } 
+
+            $this->instructors = $instructor_users;
+        }
+    }
 }

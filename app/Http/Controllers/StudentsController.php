@@ -13,7 +13,7 @@ class StudentsController extends Controller
 
     public function edit()
     {
-        
+
     }
 
     public function create()
@@ -34,5 +34,10 @@ class StudentsController extends Controller
     public function destroy()
     {
 
+    }
+
+    public function __construct(UserRepository $users)
+    {
+        $this->users = $users;
     }
 }
