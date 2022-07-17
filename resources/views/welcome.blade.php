@@ -99,11 +99,11 @@
                         <img id="slider" class="content is-responsive is-image is-large" style="width: 64%">
                     </div>
                     <div class="is-responsive is-mobile" style="display: flex; flex-direction: column; width: 20%; margin-top: 240px; margin-left: -320px; margin-right: 80px; padding: 10px; text-align: center; justify-content: flex-start">
-                        <button class="button is-primary is-responsive">
+                        <button class="button is-primary is-responsive mb-5">
                             Get Started
                         </button>
-                        <span>Already Registered?</span>
-                        <button class="button is-responsive">
+                        <span class="mb-5">Already Registered?</span>
+                        <button class="button is-responsive mb-5">
                             Login
                         </button>
                     </div>
