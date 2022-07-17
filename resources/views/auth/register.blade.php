@@ -43,7 +43,7 @@
                             <label for="role" class="col-md-4 col-form-label text-md-end">{{ __('User Role') }}</label>
 
                             <div class="col-md-6">
-                                <select id="roles" class="form-control input select @error('email') is-invalid @enderror" name="roles" value="{{ old('user_role') }}" required>
+                                <select id="user_role" class="form-control input select @error('email') is-invalid @enderror" name="user_role" value="{{ old('user_role') }}" required>
                                     <option>Student</option>
                                     <option>Instructor</option>
                                 </select>
