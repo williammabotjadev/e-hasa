@@ -15,6 +15,13 @@ return new class extends Migration
     {
         Schema::create('messages', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedBigInteger('user_id')->index(); 
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade'); 
+            $table->string('subject');
+            $table->string('sender_email');
+            $table->string('body');
+            $table->string('time_sent');
+            $table->string('time_opened');
             $table->timestamps();
         });
     }
