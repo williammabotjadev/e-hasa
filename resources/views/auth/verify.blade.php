@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card" style="display: flex; justify-content: center; align-items: center; text-align: left; flex-direction: column; width: 100%; padding: 15px">
-                <div class="card-header">{{ __('Verify Your Email Address') }}</div>
+                <div class="card-header" style="font-size: large; font-weight: bold">{{ __('Verify Your Email Address') }}</div>
 
                 <div class="card-body">
                     @if (session('resent'))
@@ -18,7 +18,7 @@
                     {{ __('If you did not receive the email') }},
                     <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
                         @csrf
-                        <button type="submit" class="btn btn-link p-0 m-0 align-baseline">{{ __('click here to request another') }}</button>.
+                        <button type="submit" class="button btn-link p-0 m-0 align-baseline" style="background: #808000; color: white">{{ __('click here to request another') }}</button>.
                     </form>
                 </div>
             </div>
