@@ -8,7 +8,7 @@ class StudentsController extends Controller
 {
     public function index()
     {
-
+        return view('students.index');
     }
 
     public function edit()
@@ -33,7 +33,7 @@ class StudentsController extends Controller
 
     public function update()
     {
-        
+
     }
 
     public function destroy()

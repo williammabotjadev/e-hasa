@@ -8,7 +8,7 @@ class CurriculumsController extends Controller
 {
     public function index()
     {
-
+        return view('curriculums.index');
     }
 
     public function edit()

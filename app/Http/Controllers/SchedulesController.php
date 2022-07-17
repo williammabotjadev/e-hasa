@@ -8,7 +8,7 @@ class SchedulesController extends Controller
 {
     public function index()
     {
-
+        return view('schedules.index');
     }
 
     public function edit()

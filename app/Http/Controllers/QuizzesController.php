@@ -8,7 +8,7 @@ class QuizzesController extends Controller
 {
     public function index()
     {
-
+        return view('curriculums.lessons.quizzes.index');
     }
 
     public function edit()
