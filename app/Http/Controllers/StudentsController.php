@@ -31,6 +31,11 @@ class StudentsController extends Controller
 
     }
 
+    public function update()
+    {
+        
+    }
+
     public function destroy()
     {
 

@@ -26,6 +26,11 @@ class SchedulesController extends Controller
 
     }
 
+    public function update()
+    {
+        
+    }
+
     public function show()
     {
 

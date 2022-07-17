@@ -31,6 +31,11 @@ class ResourcesController extends Controller
 
     }
 
+    public function update()
+    {
+        
+    }
+
     public function destroy()
     {
 

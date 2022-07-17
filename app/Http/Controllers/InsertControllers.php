@@ -26,6 +26,11 @@ class InsertControllers extends Controller
 
     }
 
+    public function update()
+    {
+        
+    }
+
     public function show()
     {
 
