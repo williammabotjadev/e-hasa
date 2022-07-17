@@ -71,37 +71,34 @@
     </div>
 
     <div class="navbar-end">
+    @if (Route::has('login'))
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light">
+        @auth
+        <a href="{{ url('/home') }}" class="button is-primary">
+            <strong>Home</strong>
+        </a>
+        @else
+          <a href="{{ route('login') }}" class="button is-light">
             Log in
           </a>
+          @if (Route::has('register'))
+          <a href="{{ route('register') }}" class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          @endif
+        @endauth
         </div>
+    @endif
       </div>
     </div>
   </div>
 </nav>
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-               <img id="slider">
-                </div>
+            <div class="d-flex flex-row container-fluid is-mobile px-5 py-5 align-items-end" style="padding: 20px 0px 0px 20px">
+                    <img id="slider"  width="778" height="512">
+            </div>      
+               
+            
             </div>
         </div>
 
@@ -133,7 +130,7 @@
             }
 
             window.onload = function() {
-                setInterval(next, 2000);
+                setInterval(next, 4000);
             }
             
         </script>
