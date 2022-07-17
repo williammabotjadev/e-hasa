@@ -12,7 +12,7 @@ class Instructor extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class, 'foreign_key', 'user_id');
+        return $this->belongsTo(User::class, 'foreign_key', 'instructor_user_id');
     }
 
     protected $fillable = [

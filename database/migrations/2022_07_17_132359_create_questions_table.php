@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('questions', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->unsignedBigInteger('quiz_id')->index(); 
             $table->foreign('quiz_id')->references('id')->on('quizzes')->onDelete('cascade'); 
             $table->string('name');
