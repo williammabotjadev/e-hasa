@@ -16,7 +16,9 @@
                     @if (count($curriculums) > 0) 
                         <h1>Your Curricula</h1>
                     @else
-                        <h1>No Curricula</h1>
+                    <div style="display: flex; justify-content: center; align-items: center; width: 100%">
+                        <a href="{{ url('/api/curriculums/create') }}" class="button is-large" style="background: #808000; color: white">Create a Curriculum</h1>
+                    </div>
                     @endif
                 </div>
 
