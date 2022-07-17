@@ -15,6 +15,15 @@ return new class extends Migration
     {
         Schema::create('quizzes', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedBigInteger('curriculum_id')->index(); 
+            $table->foreign('curriculum_id')->references('id')->on('curriculums')->onDelete('cascade'); 
+            $table->string('name');
+            $table->string('description');
+            $table->string('created_date');
+            $table->string('taken_date')->nullable();
+            $table->string('duration');
+            $table->string('start_time')->nullable();
+            $table->string('end_time')->nullable();
             $table->timestamps();
         });
     }

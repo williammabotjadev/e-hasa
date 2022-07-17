@@ -36,8 +36,8 @@ class Quiz extends Model
     protected $fillable = [
         'name',
         'description',
-        'start_date',
-        'end_date',
+        'created_date',
+        'taken_date',
         'duration',
         'start_time',
         'end_time'
