@@ -38,6 +38,15 @@ class StudentsController extends Controller
 
     public function __construct(UserRepository $users)
     {
-        $this->users = $users;
+        foreach($users as $user) 
+        {
+            $student_users = [];
+
+            if($user->user_role == "Student") {
+                array_push($student_users, $user);    
+            } 
+
+            $this->student = $student_users;
+        }
     }
 }
