@@ -2,20 +2,20 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card" style="display: flex; justify-content: center; align-items: center; text-align: left; flex-direction: column; width: 40%; padding: 20px">
+    <div class="row justify-content-center" style="display: flex; flex-direction: row">
+        <div class="col-md-8" style="width: 100%">
+            <div class="card" style="display: flex; justify-content: center; align-items: center; text-align: left; flex-direction: column; width: 100%; padding: 15px">
                 <div class="card-header card-header-title mb-5"><h2 style="font-size: large; font-weight: bold">{{ __('Register') }}</h2></div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                <div class="card-body" style="width: 100%">
+                    <form method="POST" action="{{ route('register') }}" >
                         @csrf
 
-                        <div class="row mb-3">
+                        <div class="row mb-3" >
                             <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
 
                             <div class="col-md-4">
-                                <input id="name" type="text" class="form-control input @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                <input id="name" type="text" class="form-control input @error('name') is-invalid @enderror"  name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -39,7 +39,7 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3">
+                        <div class="row mb-3 fullwidth">
                             <label for="role" class="col-md-4 col-form-label text-md-end">{{ __('User Role') }}</label>
 
                             <div class="col-md-6">
@@ -88,6 +88,10 @@
                     </form>
                 </div>
             </div>
+            
+        </div>
+        <div class="col ml-lg-5 mt-lg-5">
+            <img src="{{ asset('/images/register.jpg') }}" style="width: 75%; margin: 40px 0px 0px 120px" />
         </div>
     </div>
 </div>
