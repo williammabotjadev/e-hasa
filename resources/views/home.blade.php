@@ -15,7 +15,7 @@
                     @endif
 
                     <div class="row" style="display: flex; flex-direction: row; justify-content: center; padding: 40px; width: 100%">
-                            <a href="{{ route('classrooms') }}">
+                            <a href="{{ url('/api/classrooms') }}">
                             <div class="row is-large row-block py-5" style="display: flex; flex-direction: column; text-align: center">
                                 
                                 <i class="fa fa-laptop fa-lg" style="font-size: 96px; text-align: center"></i>
@@ -23,42 +23,42 @@
                                 <strong>Classrooms</strong>
                             </div>
                             </a>
-                            <a href="#">
+                            <a href="{{ url('/api/students') }}">
                             <div class="row is-large row-block py-5" style="display: flex; flex-direction: column; text-align: center; align-items: center">
                                 <i class="fa fa-users fa-lg mt-lg-5" style="font-size: 96px"></i>
                                 <br>
                                 <strong>Students</strong>
                             </div>
                             </a>    
-                            <a href="#">
+                            <a href="{{ url('/api/curriculums') }}">
                             <div class="row is-large row-block py-5" style="display: flex; flex-direction: column; text-align: center">
                                 <i class="fa fa-book fa-lg" style="font-size: 96px; text-align: center"></i>
                                 <br>
                                 <strong>Curriculums</strong>
                             </div>
                             </a>
-                            <a href="#">
+                            <a href="{{ url('/api/schedules') }}">
                             <div class="row is-large row-block py-5" style="display: flex; flex-direction: column; text-align: center">
                                 <i class="fa fa-calendar fa-lg" style="font-size: 96px; text-align: center"></i>
                                 <br>
                                 <strong>Schedule</strong>
                             </div>
                             </a>
-                            <a href="#">
+                            <a href="{{ url('/api/resources') }}">
                             <div class="row is-large row-block py-5" style="display: flex; flex-direction: column; text-align: center">
                                 <i class="fa fa-info-circle fa-lg" style="font-size: 96px; text-align: center"></i>
                                 <br>
                                 <strong>Resources</strong>
                             </div>
                             </a>
-                            <a href="#">
+                            <a href="{{ url('/api/messages') }}">
                             <div class="row is-large row-block py-5" style="display: flex; flex-direction: column; text-align: center">
                                 <i class="fa fa-envelope fa-lg" style="font-size: 96px; text-align: center"></i>
                                 <br>
                                 <strong>Messages</strong>
                             </div>
                             </a>
-                            <a href="#">
+                            <a href="{{ url('/api/settings') }}">
                             <div class="row is-large row-block py-5" style="display: flex; flex-direction: column; text-align: center">
                                 <i class="fa fa-cogs fa-lg" style="font-size: 96px; text-align: center"></i>
                                 <br>
