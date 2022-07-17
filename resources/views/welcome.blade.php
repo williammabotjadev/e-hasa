@@ -75,9 +75,12 @@
       <div class="navbar-item">
         <div class="buttons">
         @auth
-        <a href="{{ url('/home') }}" class="button" style="background: #808000; color: white">
-            <strong>Home</strong>
-        </a>
+        <form action="{{ route('logout') }}" method="post">
+            @csrf
+        <button  class="button" style="background: #808000; color: white">
+            <strong>Logout</strong>
+        </button>
+        </form>
         @else
           <a href="{{ route('login') }}" class="button is-light">
             Log in
