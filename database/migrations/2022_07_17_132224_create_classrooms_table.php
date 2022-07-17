@@ -15,6 +15,13 @@ return new class extends Migration
     {
         Schema::create('classrooms', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('string');
+            $table->string('description');
+            $table->string('start_date');
+            $table->string('end_date');
+            $table->string('duration');
+            $table->string('start_time');
+            $table->string('end_time');
             $table->timestamps();
         });
     }
