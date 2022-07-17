@@ -22,6 +22,17 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+        .row-block {
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+            background: #808000;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
     <div id="app">

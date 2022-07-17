@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="heading" style="margin: 20px; font-size: 24px">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,8 +14,39 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
-                    <h1>Instructor Home</h1>
+                    <div class="row" style="display: flex; flex-direction: row; padding: 20px; width: 100%">
+                            <a href="/">
+                            <div class="row is-large row-block">
+                                Classrooms
+                            </div>
+                            </a>
+                            <a href="/">
+                            <div class="row is-large row-block">
+                                Students
+                            </div>
+                            </a>    
+                            <a href="/">
+                            <div class="row is-large row-block">
+                                Curriculums
+                            </div>
+                            </a>
+                            <a href="/">
+                            <div class="row is-large row-block">
+                                Resources
+                            </div>
+                            </a>
+                            <a href="/">
+                            <div class="row is-large row-block">
+                                Messages
+                            </div>
+                            </a>
+                            <a href="/">
+                            <div class="row is-large row-block">
+                                Settings
+                            </div>
+                            </a>
+                    </div>
+
                 </div>
             </div>
         </div>

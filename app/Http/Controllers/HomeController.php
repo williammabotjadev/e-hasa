@@ -27,7 +27,7 @@ class HomeController extends Controller
         if (auth()->user()->user_role == "Instructor") {
             return view('home');
         } else {
-            return view('student_home');
+            return view('student.home');
         }
             
     }
