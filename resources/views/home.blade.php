@@ -32,6 +32,11 @@
                             </a>
                             <a href="#">
                             <div class="row is-large row-block">
+                                Schedule
+                            </div>
+                            </a>
+                            <a href="#">
+                            <div class="row is-large row-block">
                                 Resources
                             </div>
                             </a>

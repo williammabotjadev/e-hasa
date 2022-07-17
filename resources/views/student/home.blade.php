@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="heading" style="margin: 20px; font-size: 24px">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,10 +14,43 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
-                    <h1>Student Home</h1>
+                    <div class="row" style="display: flex; flex-direction: row; justify-content: center; padding: 40px; width: 100%">
+                            <a href="#">
+                            <div class="row is-large row-block">
+                                Classrooms
+                            </div>
+                            </a>
+                            <a href="#">
+                            <div class="row is-large row-block">
+                                Instructors
+                            </div>
+                            </a>    
+                            <a href="#">
+                            <div class="row is-large row-block">
+                                Schedule
+                            </div>
+                            </a>
+                            <a href="#">
+                            <div class="row is-large row-block">
+                                Resources
+                            </div>
+                            </a>
+                            <a href="#">
+                            <div class="row is-large row-block">
+                                Messages
+                            </div>
+                            </a>
+                            <a href="#">
+                            <div class="row is-large row-block">
+                                Settings
+                            </div>
+                            </a>
+                    </div>
+
                 </div>
             </div>
+            <br />
+            <h1 style="margin-top: 80px; text-align: center"><em>"Nothing can defeat the Human Will..."</em> <strong>- Benjamin Disraeli</strong></h1>
         </div>
     </div>
 </div>
