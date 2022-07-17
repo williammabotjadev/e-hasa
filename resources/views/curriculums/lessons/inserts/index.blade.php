@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="heading" style="margin: 20px; font-size: 24px">{{ __('Schedule') }}</div>
+                <div class="heading" style="margin: 20px; font-size: 24px">{{ __('Inserts Center') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
