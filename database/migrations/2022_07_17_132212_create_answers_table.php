@@ -14,7 +14,14 @@ return new class extends Migration
     public function up()
     {
         Schema::create('answers', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('name');
+            $table->string('description');
+            $table->string('content');
+            $table->unsignedBigInteger('quiz_id')->index(); 
+            $table->foreign('quiz_id')->references('id')->on('quizzes')->onDelete('cascade'); 
+            $table->unsignedBigInteger('question_id')->index(); 
+            $table->foreign('question_id')->references('id')->on('questions')->onDelete('cascade'); 
             $table->timestamps();
         });
     }
